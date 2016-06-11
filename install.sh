@@ -2,7 +2,6 @@
 
 cp .gitconfig ~/
 cp .npmrc ~/
-cp .vimrc ~/
 cp .zshrc ~/
 
 # install .oh-my-zsh
