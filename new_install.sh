@@ -2,7 +2,9 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install build-essential xclip vim git freerdp2-x11 curl zsh
+sudo apt install build-essential vim freerdp2-x11 terminator curl wget zsh fonts-powerline
+
+chsh -s $(which zsh)
 
 cd
 
@@ -13,4 +15,11 @@ cd dotfiles
 
 ./install.sh
 
+cd ~/.oh-my-zsh/plugins
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 sudo apt autoremove
+sudo reboot -n
