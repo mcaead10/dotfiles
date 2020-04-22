@@ -53,7 +53,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-flow-completion bower brew history node npm sudo web-searchtmux tmuxinator osx)
+plugins=(git git-flow brew history node npm sudo osx)
 
 # User configuration
 
@@ -129,6 +129,5 @@ fi
 
 if [[ "$(uname -s)" -eq "Darwin" ]]
 then
-  eval "$(rbenv init -)"
-  source ~/.bin/tmuxinator.zsh
+
 fi

@@ -21,5 +21,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+cd ~/Documents/dotfiles
+
+cp .zshrc ~/.zshrc
+
 sudo apt autoremove
 sudo reboot -n
